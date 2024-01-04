@@ -11,7 +11,7 @@ def get_domain_recommendations(phrase):
         'availabilityCheck': True,
         'showOnlyAvailable': True,
     }
-    response = requests.post('https://umbrella-api.ionos.org/recommendations?limit=200&offset=0', json=json_data)
+    response = requests.post('https://umbrella-api.ionos.org/recommendations?limit=100&offset=0', json=json_data)
     return response.json()
 
 def main():
